@@ -2,7 +2,7 @@
 
 codex 用の skills を管理する repository です。
 
-skill-creator で作成しているが、人間がskillの中身をレビューするので多少性能が落ちても日本語技術文書としての体裁を重視します。
+skill-creator で作成しているが、人間がskillの中身をレビューするので多少性能が落ちても日本語技術文書としての体裁を重視する。
 
 ## setup
 
@@ -18,3 +18,7 @@ Markdown ファイルをチェックするには、次のコマンドを実行�
 ```sh
 pnpm lint
 ```
+
+## 現在実行しているスキル
+
+- commit-message: 日本語のConventional Commits形式でcommit messageを作成するskill
