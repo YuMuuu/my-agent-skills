@@ -1,0 +1,3 @@
+interface:
+  display_name: "Git Add"
+  short_description: "安全にGitの変更をstageする"
