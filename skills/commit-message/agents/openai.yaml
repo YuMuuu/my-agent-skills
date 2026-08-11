@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commit Message"
+  short_description: "日本語のConventional Commitsを作成"
+  default_prompt: "$commit-messageを使ってstagedされた変更からcommit messageを作成してください。"
