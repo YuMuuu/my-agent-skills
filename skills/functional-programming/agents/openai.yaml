@@ -1,0 +1,4 @@
+interface:
+  display_name: "Functional Programming"
+  short_description: "コード生成とレビューに関数型の原則を適用"
+  default_prompt: "$functional-programmingを使ってコードを関数型スタイルで生成またはレビューしてください。"

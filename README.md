@@ -26,3 +26,6 @@ pnpm lint
 
 - `git-add`
   変更内容を確認し、対象のファイルやを git add -p を利用し stage する。
+
+- `functional-programming`
+  コード生成とコードレビューで関数型のエッセンスを利用する。
