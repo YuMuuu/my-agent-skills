@@ -2,7 +2,7 @@
 
 codex 用の skills を管理する repository です。
 
-skill-creator で作成しているが、人間が skill の中身をレビューするので多少性能が落ちても技術文書としての体裁を重視する。
+skill-creator で作成していますが、人間が skill の中身をレビューするので多少性能が落ちても技術文書としての体裁を重視する方針です。
 
 ## setup
 
