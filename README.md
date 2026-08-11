@@ -11,6 +11,19 @@ mise install
 pnpm install
 ```
 
+### Codexへのskill読み込み
+
+repositoryのルートで次のコマンドを実行すると、repo固有のskillとしてCodexに読み込ませられます。
+
+```sh
+mkdir -p .agents/skills
+ln -sfn ../../skills/commit-message .agents/skills/commit-message
+ln -sfn ../../skills/git-add .agents/skills/git-add
+ln -sfn ../../skills/functional-programming .agents/skills/functional-programming
+```
+
+反映するには、Codexで新しいセッションを開始します。
+
 ### textlintの実行
 
 Markdown ファイルをチェックするには、次のコマンドを実行する。
