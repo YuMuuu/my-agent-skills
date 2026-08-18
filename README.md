@@ -11,18 +11,20 @@ mise install
 pnpm install
 ```
 
-### Codexへのskill読み込み
+### Codex全体へのskill読み込み
 
-repositoryのルートで次のコマンドを実行すると、repo固有のskillとしてCodexに読み込ませられます。
+repository のルートで次のコマンドを実行します。Codex 全体で利用する skill として読み込ませられます。
 
 ```sh
-mkdir -p .agents/skills
-ln -sfn ../../skills/commit-message .agents/skills/commit-message
-ln -sfn ../../skills/git-add .agents/skills/git-add
-ln -sfn ../../skills/functional-programming .agents/skills/functional-programming
+CODEX_SKILLS_DIR="${CODEX_HOME:-$HOME/.codex}/skills"
+mkdir -p "$CODEX_SKILLS_DIR"
+ln -sfn "$PWD/skills/commit-message" "$CODEX_SKILLS_DIR/commit-message"
+ln -sfn "$PWD/skills/code-comments" "$CODEX_SKILLS_DIR/code-comments"
+ln -sfn "$PWD/skills/git-add" "$CODEX_SKILLS_DIR/git-add"
+ln -sfn "$PWD/skills/functional-programming" "$CODEX_SKILLS_DIR/functional-programming"
 ```
 
-反映するには、Codexで新しいセッションを開始します。
+反映するには、Codex で新しいセッションを開始します。
 
 ### textlintの実行
 
@@ -33,6 +35,9 @@ pnpm lint
 ```
 
 ## 現在実装しているスキル
+
+- `code-comments`
+  日本語の通常コメント、TODO、FIXME を作成・改善する。処理内容（what）の繰り返しを避け、コードから分からない理由や制約を説明する。
 
 - `commit-message`
   日本語の Conventional Commits 形式で commit message を作成する。

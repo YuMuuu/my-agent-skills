@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Comments"
+  short_description: "通常コメント・TODO・FIXMEを日本語で作成・改善します"
+  default_prompt: "$code-commentsを使って、このコードに必要なコメントを書いてください。"
