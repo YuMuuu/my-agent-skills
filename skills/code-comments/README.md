@@ -1,0 +1,28 @@
+# code-comments
+
+コード内コメントを作成する skill です。コメントの要否を判断し、コードから読み取れない意図・理由・制約を説明します。
+
+コメントは日本語で書きます。
+
+## 参考文献
+
+- [Code Health: To Comment or Not to Comment?](https://testing.googleblog.com/2017/07/code-health-to-comment-or-not-to-comment.html)
+  - コメントは、コードから分からない「なぜ」を説明するために使う。
+  - 将来の変更で壊されないよう、実装上の意図や制約を伝える。
+  - コードの処理内容をそのまま繰り返すコメントはノイズなので避ける。
+  - コメントを書く前に、命名改善やメソッド抽出などでコード自体を明確にできないか検討する。
+
+- [What to look for in a code review - Comments](https://google.github.io/eng-practices/review/reviewer/looking-for.html#comments)
+  - コメントが本当に必要か確認し、明確で理解しやすくする。
+  - 原則として「処理内容（what）」ではなく「理由（why）」を説明する。
+  - 正規表現や複雑なアルゴリズムなど、コードだけでは処理内容を理解しにくい場合は処理内容（what）の説明も有効。
+  - 既存の TODO やコメントも確認し、変更によって不要になったものを更新・削除する。
+  - クラス・モジュール・関数の目的や使い方を説明するドキュメントは、行コメントとは区別する。
+
+- [TODO comments - IntelliJ IDEA Documentation](https://www.jetbrains.com/help/idea/using-todo.html)
+  - TODO は将来の改善、変更、確認事項など、後で対応が必要な箇所を追跡するために使う。
+  - TODO/FIXME は対象言語の標準的なコメント構文で書き、対応内容を具体的にする。
+
+## 適用上の注意
+
+コードがすでに明確で、コメントが処理内容（what）を繰り返すだけならコメントを書かない。コードが不明瞭で、改善すればコメントが不要になる場合は、コードを変更する前にユーザへ確認する。承認されなければコードを変更せず、処理内容（what）を繰り返すコメントも追加しない。コードから分からない理由・制約がある場合だけ、必要なコメントを書く。
