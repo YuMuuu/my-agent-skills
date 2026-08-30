@@ -20,6 +20,7 @@ CODEX_SKILLS_DIR="${CODEX_HOME:-$HOME/.codex}/skills"
 mkdir -p "$CODEX_SKILLS_DIR"
 ln -sfn "$PWD/skills/commit-message" "$CODEX_SKILLS_DIR/commit-message"
 ln -sfn "$PWD/skills/code-comments" "$CODEX_SKILLS_DIR/code-comments"
+ln -sfn "$PWD/skills/code-review" "$CODEX_SKILLS_DIR/code-review"
 ln -sfn "$PWD/skills/git-add" "$CODEX_SKILLS_DIR/git-add"
 ln -sfn "$PWD/skills/functional-programming" "$CODEX_SKILLS_DIR/functional-programming"
 ```
@@ -38,6 +39,9 @@ pnpm lint
 
 - `code-comments`
   日本語の通常コメント、TODO、FIXME を作成・改善する。処理内容（what）の繰り返しを避け、コードから分からない理由や制約を説明する。
+
+- `code-review`
+  コード生成前に設計を確認し、生成中に最小限のチェックをする。生成後は差分をレビューする。一般原則と、Scala ecosystem の技術別規約を分けて適用する。
 
 - `commit-message`
   日本語の Conventional Commits 形式で commit message を作成する。
