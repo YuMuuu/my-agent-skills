@@ -22,6 +22,7 @@ ln -sfn "$PWD/skills/commit-message" "$CODEX_SKILLS_DIR/commit-message"
 ln -sfn "$PWD/skills/code-comments" "$CODEX_SKILLS_DIR/code-comments"
 ln -sfn "$PWD/skills/git-add" "$CODEX_SKILLS_DIR/git-add"
 ln -sfn "$PWD/skills/functional-programming" "$CODEX_SKILLS_DIR/functional-programming"
+ln -sfn "$PWD/skills/youtube-knowledge" "$CODEX_SKILLS_DIR/youtube-knowledge"
 ```
 
 反映するには、Codex で新しいセッションを開始します。
@@ -47,3 +48,6 @@ pnpm lint
 
 - `functional-programming`
   コード生成とコードレビューで関数型のエッセンスを利用する。
+
+- `youtube-knowledge`
+  YouTube 動画を参考資料として、動画・字幕・必要な静止画を確認し、依頼に答える。暗黙起動は無効で、`$youtube-knowledge` で呼び出す。
