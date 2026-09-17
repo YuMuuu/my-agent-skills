@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Review"
+  short_description: "設計確認から実装後レビューまでを支援します"
+  default_prompt: "$code-reviewを使って、対象コードをレビューしてください。"
